@@ -118,6 +118,10 @@ const Location = ({ formData, setFormData }) => {
               }
             />
           </div>
+          <div>
+              <Link to={"/generalinfo"}><button>Previous</button></Link>
+            </div>
+
         </div>
       </form>
     </div>

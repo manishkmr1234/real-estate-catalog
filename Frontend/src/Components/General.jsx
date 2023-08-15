@@ -1,6 +1,7 @@
 import "../Styles/basic.css";
 import vector from "../Assets/Add-Property/Vector.png"
 import vec1 from "../Assets/Add-Property/vector1.png"
+import "../Styles/General.css";
 
 const General = ({ formData, setFormData }) => {
   return (
@@ -121,6 +122,14 @@ const General = ({ formData, setFormData }) => {
               <option value="PKG-4">PKG-4</option>
             </select>
           </div>
+          <div className="general-btn">
+                            <div>
+                                <Link to={"/propertyinfo"}><button>Pervious</button></Link>
+                            </div>
+                            <div>
+                                <Link to={"/locationinfo"}><button type="submit">save & continue </button></Link>
+                            </div>
+                        </div>
         </div>
       </form>
     </div>

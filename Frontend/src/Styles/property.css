@@ -54,3 +54,9 @@ th {
 td {
   padding: 5px;
 }
+
+.property-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

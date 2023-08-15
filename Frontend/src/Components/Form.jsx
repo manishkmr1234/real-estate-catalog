@@ -3,7 +3,7 @@ import General from "./General";
 import Property from "./property";
 import Location from "./Location";
 import { useState } from "react";
-import "../Styles/basic.css"
+import "../Styles/basic.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -65,7 +65,7 @@ const Form = () => {
       setSubmitted(true);
       let user = JSON.parse(localStorage.getItem("user"))._id;
       const { propertyType, mobile, ppd, area, length, breath } = formData;
-      //console.log(user);
+      console.log(user);
       if (!propertyType || !mobile || !ppd || !area || !length || !breath) {
         alert("Please fill out all the required fields marked with * before submitting the form.");
         return;

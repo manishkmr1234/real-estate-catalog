@@ -1,5 +1,5 @@
 import "../Styles/basic.css"
-
+import "../Styles/property.css";
 const Property = ({ formData, setFormData }) => {
   const handleLengthChange = (event) => {
     const length = parseInt(event.target.value, 10);
@@ -123,6 +123,14 @@ const Property = ({ formData, setFormData }) => {
               }
             />
           </div>
+          <div className="property-btn">
+                            <div>
+                                <Link to={"/basicinformation"}><button>Pervious</button></Link>
+                            </div>
+                            <div>
+                                <Link to={"/generalinfo"}><button>Save & continue</button></Link>
+                            </div>
+                        </div>
         </div>
       </form>
     </div>
